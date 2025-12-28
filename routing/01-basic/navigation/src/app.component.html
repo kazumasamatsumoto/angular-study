@@ -1,0 +1,25 @@
+<header>
+  <h1>{{ title }}</h1>
+  <nav>
+    <a
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}">
+      ホーム
+    </a>
+    <a
+      routerLink="/products"
+      routerLinkActive="active">
+      商品一覧
+    </a>
+    <a
+      routerLink="/search"
+      routerLinkActive="active">
+      検索
+    </a>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
